@@ -100,6 +100,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,             togglebar,      {0} },
 	{ MODKEY,                       XK_j,             focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,             focusstack,     {.i = -1 } },
+	{ MODKEY,                       XK_Left,          focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_Right,         focusstack,     {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_i,             incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_d,             incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,             setmfact,       {.f = -0.05} },
@@ -136,7 +138,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period,        tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_g,             shiftview,      { .i = -1 } },
         { MODKEY,                       XK_semicolon,     shiftview,      { .i = 1 } },
-	{ MODKEY|ShiftMask,             XK_f,      fullscreen,     {0} },
+	{ MODKEY|ShiftMask,             XK_f,             fullscreen,     {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
