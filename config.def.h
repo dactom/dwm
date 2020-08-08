@@ -98,6 +98,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,             spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return,        spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,             togglebar,      {0} },
+	{ MODKEY,			XK_w,		  spawn,	  SHCMD("$BROWSER") },
 	{ MODKEY,                       XK_j,             focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,             focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_Left,          focusstack,     {.i = +1 } },
@@ -167,4 +168,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
